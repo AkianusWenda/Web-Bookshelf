@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookshelf Apps</title>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="head-title">Bookshelf Apps</h2>
+    </header>
+    <main>
+        <!-- Section input buku baru -->
+        <section class="section-form">
+            <h2>Masukan Buku Baru</h2>
+            <form id="book">
+                <div class="form-group">
+                    <label for="bookTitle">Judul</label>
+                    <input type="text" id="bookTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookAuthor">Penulis</label>
+                    <input type="text" id="bookAuthor" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookYear">Tahun</label>
+                    <input type="number" id="bookYear" required>
+                </div>
+                <div class="form-inline">
+                    <label for="bookIsComplete">Selesai Dibaca</label>
+                    <input type="checkbox" id="bookIsComplete">
+                </div>
+                <button id="submitBook" type="submit">Masukan Buku ke Rak</button>
+            </form>
+        </section>
+        <!-- Section untuk cari berdasarkan judul buku -->
+        <section class="section-search">
+            <h2>Cari Buku (Opsional)</h2>
+            <label for="searchBook">Judul</label>
+            <input type="search" id="searchBook">
+            <button id="searchSubmit">Cari</button>
+        </section>
+        <!-- Section untuk menampil buku yang belum selesai dibaca -->
+        <section class="section-complete">
+            <h2>Belum Selesai Dibaca</h2>
+            <div id="incompleteReadBook" class="book-list">
+            </div>
+        </section>
+        <!-- Section untuk menampil buku yang sudah selesai dibaca -->
+        <section class="section-incomplete">
+            <h2>Selesai Dibaca</h2>
+            <div id="completeReadBook" class="book-list">
+            </div>
+        </section>
+
+        <!-- Dialog konfirmasi hapus buku -->
+        <dialog id="deleteDialog">
+            <p>Apakah Anda yakin ingin menghapus buku ini?</p>
+            <button id="confirmDelete">Ya</button>
+            <button id="cancelDelete">Tidak</button>
+        </dialog>
+
+        <!-- Form untuk mengedit buku -->
+        <dialog id="editDialog">
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="editBookTitle">Judul</label>
+                    <input type="text" id="editBookTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBookAuthor">Penulis</label>
+                    <input type="text" id="editBookAuthor" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBookYear">Tahun</label>
+                    <input type="number" id="editBookYear" required>
+                </div>
+                <div class="form-inline">
+                    <label for="editBookIsComplete">Selesai Dibaca</label>
+                    <input type="checkbox" id="editBookIsComplete">
+                </div>
+                <button type="submit">Simpan Perubahan</button>
+            </form>
+        </dialog>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bookshelf Apps. Hak Cipta Dilindungi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Reddit+Mono:wght@200..900&display=swap');
+
+body, h2, form, label, input, button, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Reddit Mono", monospace;
+    font-weight: 400;
+    background: #f2f2f2;
+    color: #333;
+}
+
+.header {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.head-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #333;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.form-group, .form-inline {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="search"], input[type="number"] {
+    font-family: "Reddit Mono", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(2);
+    flex-direction: column;
+}
+
+button {
+    font-family: "Reddit Mono", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 10px 0px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book_item {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.book_item .action, button:hover {
+    opacity: 0.9;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
